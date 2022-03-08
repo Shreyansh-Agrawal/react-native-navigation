@@ -9,8 +9,8 @@ const Tab = createBottomTabNavigator();
 export default function Profile() {
   return (
     <Tab.Navigator>
-      <Tab.Screen name="user1" component={User1} options={{headerShown: false}}/>
-      <Tab.Screen name="user2" component={User2} options={{headerShown: false}}/>
+      <Tab.Screen name="user1" component={User1} options={{headerShown: false, tabBarBadge: 3}}/>
+      <Tab.Screen name="user2" component={User2} options={{headerShown: false, tabBarBadge: 1}}/>
     </Tab.Navigator>
   );
 }

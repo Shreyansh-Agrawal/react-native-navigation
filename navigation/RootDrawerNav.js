@@ -10,9 +10,36 @@ const Drawer = createDrawerNavigator();
 export default function RootDrawerNav(){
     return (
         <Drawer.Navigator>
-          <Drawer.Screen name="Home" component={HomeScreen} />
-          <Drawer.Screen name="Profile" component={Profile}/>
-          <Drawer.Screen name="Settings" component={Settings} />
+          <Drawer.Screen name="Home" component={HomeScreen} options={{
+          title: 'My Home',
+          headerStyle: {
+            backgroundColor: '#000',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}/>
+          <Drawer.Screen name="Profile" component={Profile} options={{
+          title: 'My Profile',
+          headerStyle: {
+            backgroundColor: '#000',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}/>
+          <Drawer.Screen name="Settings" component={Settings} options={{
+          title: 'My Settings',
+          headerStyle: {
+            backgroundColor: '#000',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}/>
         </Drawer.Navigator>
       );
 }
